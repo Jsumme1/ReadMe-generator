@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-// const { writeFile, copyFile } = require("./utils/generate-site.js");
+// const { writeFile, copyFile } = require("./utils/generateMArkdown.js");
 const inquirer = require("inquirer");
 const generatePage = require("./src/page-template");
 // TODO: Create an array of questions for user input
@@ -27,9 +27,9 @@ const questions = () => {
       default: [0],
       choices: [
         "MIT",
-        "Microsoft",
-        "Open Software License 3.0",
-        "PostgreSQL License",
+        "Boost",
+        "Mozilla",
+        "Perl",
         "The Unlicense",
         "ISC",
         "Apache License",
@@ -130,47 +130,46 @@ const questions = () => {
   ]);
 };
 
-const promptContributors = (contributorData) => {
-  // If there's no 'projects' array property, create one
-  if (!contributorData.projects) {
-    contributorData.projects = [];
-  }
-  return inquirer
-    .prompt([
-      {
-        type: "input",
-        name: "name",
-        message: "What is the name of your contributor? (Required)",
-        validate: (nameInput) => {
-          if (nameInput) {
-            return true;
-          } else {
-            console.log("You need to enter a contributor!");
-            return false;
-          }
-        },
-      },
+// const promptContributors = (contributorData) => {
+//   // If there's no 'projects' array property, create one
+//   if (!contributorData.people) {
+//     contributorData.people = [];
+//   }
+//   return inquirer
+//     .prompt([
+//       {
+//         type: "input",
+//         name: "name",
+//         message: "What is the name of your contributor? (Required)",
+//         validate: (nameInput) => {
+//           if (nameInput) {
+//             return true;
+//           } else {
+//             console.log("You need to enter a contributor!");
+//             return false;
+//           }
+//         },
+//       },
     
-  
-      {
-        type: "confirm",
-        name: "confirmAddContributor",
-        message: "Would you like to enter another contributor?",
-        default: false,
-      },
-    ])
-    .then((contributorDataAnswer) => {
-      portfolioData.projects.push(contributorDataAnswer);
-      if (contributorData.confirmAddContributor) {
-        return promptProject(contributorData);
-      } else {
-        return contributorData;
-      }
-    });
-};
+//       {
+//         type: "confirm",
+//         name: "confirmAddContributor",
+//         message: "Would you like to enter another contributor?",
+//         default: false,
+//       },
+//     ])
+//     .then((contributorData) => {
+//       contributorData.people.push(contributorDataAnswer);
+//       if (contributorDataAnswer.confirmAddContributor) {
+//         return promptContributors(contributorData);
+//       } else {
+//         return contributorData;
+//       }
+//     });
+// };
 
 questions();
-// promptContributors();
+//  promptContributors();
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
