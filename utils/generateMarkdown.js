@@ -23,8 +23,8 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-   # ${data.license} 
- # ${data.description} 
+# ${data.license} 
+# ${data.description} 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -32,10 +32,15 @@ function generateMarkdown(data) {
 * [License](#license)
 * [Tests](#tests)
 
- ## ${data.installation} <a name="installation"></a>
-## ${data.usage} <a name="questions"></a>
-## ${data.contributor}<a name="credits"></a>
-## ${data.tests} <a name="tests"></a>
+## Installation
+ ${data.installation} 
+## Usage
+ ${data.usage} 
+## Credits
+${data.contributor}
+
+## Tests
+${data.tests} 
 
 ## Questions 
 If you have any questions about the repo, open an issue or contact me directly at ${data.email}.
