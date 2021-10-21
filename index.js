@@ -26,7 +26,7 @@ function init() {
         name: "license",
         message:
           "What did you want to license this project with?(Check one, default MIT)",
-        default: [0],
+        default: [7],
         choices: [
           "MIT",
           "Boost",
@@ -35,6 +35,7 @@ function init() {
           "The Unlicense",
           "ISC",
           "Apache License",
+          "None"
         ],
       },
       {
@@ -78,16 +79,10 @@ function init() {
       },
 
       {
-        type: "confirm",
-        name: "confirmTests",
-        message: "Would you like to include any testing information?",
-        default: true,
-      },
-      {
         type: "input",
         name: "tests",
         message: "Tests:",
-        when: ({ confirmTests }) => confirmTests,
+       
       },
       {
         type: "input",
