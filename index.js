@@ -35,7 +35,7 @@ function init() {
           "The Unlicense",
           "ISC",
           "Apache License",
-          "None"
+          "None",
         ],
       },
       {
@@ -80,9 +80,21 @@ function init() {
 
       {
         type: "input",
+        name: "contributor",
+        message: "Please provide contributors you would like to include (Required)",
+        validate: (contributorInput) => {
+          if (contributorInput) {
+            return true;
+          } else {
+            console.log("You need provide a contributor");
+            return false;
+          }
+        },
+      },
+      {
+        type: "input",
         name: "tests",
         message: "Tests:",
-       
       },
       {
         type: "input",
