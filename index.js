@@ -8,6 +8,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 function init() {
   inquirer
     .prompt([
+  
       {
         type: "input",
         name: "title",
@@ -25,8 +26,7 @@ function init() {
         type: "list",
         name: "license",
         message:
-          "What did you want to license this project with?(Check one, default MIT)",
-        default: [7],
+          "What did you want to license this project with?(Check one)",
         choices: [
           "MIT",
           "Boost",
@@ -81,7 +81,8 @@ function init() {
       {
         type: "input",
         name: "contributor",
-        message: "Please provide contributors you would like to include (Required)",
+        message:
+          "Please provide contributors you would like to include (Required)",
         validate: (contributorInput) => {
           if (contributorInput) {
             return true;
@@ -109,20 +110,6 @@ function init() {
           }
         },
       },
-
-      {
-        type: "input",
-        name: "githubProfile",
-        message: "Enter your GitHub profile link (Required)",
-        validate: (githubProfileInput) => {
-          if (githubProfileInput) {
-            return true;
-          } else {
-            console.log("Please enter your GitHub link!");
-            return false;
-          }
-        },
-      },
       {
         type: "input",
         name: "email",
@@ -139,7 +126,7 @@ function init() {
     ])
 
     .then(function (data) {
-      writeFileAsync("ReadMe.md", generateMarkdown(data));
+      writeFileAsync("./utils/ReadMe.md", generateMarkdown(data));
     });
 
 }
@@ -148,40 +135,3 @@ function init() {
 init();
 
 
-// const promptContributors = (contributorData) => {
-//   // If there's no 'projects' array property, create one
-//   if (!contributorData.people) {
-//     contributorData.people = [];
-//   }
-//   return inquirer
-//     .prompt([
-//       {
-//         type: "input",
-//         name: "name",
-//         message: "What is the name of your contributor? (Required)",
-//         validate: (nameInput) => {
-//           if (nameInput) {
-//             return true;
-//           } else {
-//             console.log("You need to enter a contributor!");
-//             return false;
-//           }
-//         },
-//       },
-    
-//       {
-//         type: "confirm",
-//         name: "confirmAddContributor",
-//         message: "Would you like to enter another contributor?",
-//         default: false,
-//       },
-//     ])
-//     .then((contributorData) => {
-//       contributorData.people.push(contributorDataAnswer);
-//       if (contributorDataAnswer.confirmAddContributor) {
-//         return promptContributors(contributorData);
-//       } else {
-//         return contributorData;
-//       }
-//     });
-// }

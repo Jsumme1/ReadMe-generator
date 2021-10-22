@@ -19,13 +19,6 @@ function renderLicenseBadge(license) {
     case "None":
       return "";
   };
-
-//  
-//
-//  
-//  
-// 
- //
 }
 
 // TODO: Create a function that returns the license link
@@ -64,7 +57,7 @@ ${renderLicenseBadge(data.license)}
 * [Contributions](#contributions)
 ${renderLicenseLink(data.license)}
 * [Tests](#tests)
-*[Questions](#questions)
+* [Questions](#questions)
 
 ## Installation
  ${data.installation} 
@@ -78,10 +71,10 @@ ${renderLicenseSection(data.license)}
 ${data.tests} 
 
 ## Questions 
-If you have any questions about the repo, open an issue or contact me directly at ${
+* If you have any questions about the repo, open an issue or contact me directly at ${
     data.email
   }.
-You can find more of my work at [https://github.com/${
+* You can find more of my work at [https://github.com/${
     data.github
   }](https://github.com/${data.github})
 `;

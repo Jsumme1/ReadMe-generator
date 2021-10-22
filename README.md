@@ -1,26 +1,26 @@
-# tjri\\
+# gernate
 
-MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-# eirlhker 
+  
+# I like readmes 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributions](#contributions)
-* [License](#license)
+
 * [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
- \ehtls 
+ no need 
 ## Usage
- tenfkstr 
+ jfdlsre;kl 
 ## Contributions
-undefined
+fjue
 
-## License
-      The license used in this application is MIT
+
 ## Tests
-undefined 
+jdfleruop 
 
 ## Questions 
-If you have any questions about the repo, open an issue or contact me directly at elshlirs.
-You can find more of my work at [https://github.com/hrsdhkd](https://github.com/hrsdhkd)
+* If you have any questions about the repo, open an issue or contact me directly at ki;e@bunnys.
+* You can find more of my work at [https://github.com/julie](https://github.com/julie)
