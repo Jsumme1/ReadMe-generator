@@ -50,7 +50,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
 ${renderLicenseBadge(data.license)}  
-# ${data.description} 
+## ${data.description} 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -71,9 +71,9 @@ ${renderLicenseSection(data.license)}
 ${data.tests} 
 
 ## Questions 
-* If you have any questions about the repo, open an issue or contact me directly at ${
+* If you have any questions about the repo, open an issue or contact me directly at <${
     data.email
-  }.
+  }>.
 * You can find more of my work at [https://github.com/${
     data.github
   }](https://github.com/${data.github})

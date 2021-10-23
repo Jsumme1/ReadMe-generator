@@ -26,7 +26,7 @@ function init() {
         type: "list",
         name: "license",
         message:
-          "What did you want to license this project with?(Check one)",
+          "What did you want to license this project with?(select one, hit enter)",
         choices: [
           "MIT",
           "Boost",
