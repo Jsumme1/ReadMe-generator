@@ -37,6 +37,8 @@ THEN I am taken to the corresponding section of the README
 ## Contributions
 Made by Julie
 
+## Video Link
+[https://watch.screencastify.com/v/xWDDbuDJ5Ba3Clbkywur]
 
 ## Tests
 none are included in this instance
