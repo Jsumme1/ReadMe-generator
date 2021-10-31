@@ -30,7 +30,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 ## Images 
-![Index.js main file](assets\images\IndexJSPic.JPG)
+![Index.js main file](https://github.com/Jsumme1/ReadMe-generator/blob/main/assets/images/IndexJSPic.JPG)
 ![generate markdown file](assets\images\MarkDownScreenShot.JPG)
 ![Generated ReadMe](assets\images\ReadMEScreenshot.JPG)
 
