@@ -32,7 +32,7 @@ THEN I am taken to the corresponding section of the README
 ## Images 
 ![Index.js main file](https://github.com/Jsumme1/ReadMe-generator/blob/main/assets/images/IndexJSPic.JPG)
 ![generate markdown file](https://github.com/Jsumme1/ReadMe-generator/blob/main/assets/images/MarkDownScreenShot.JPG)
-![Generated ReadMe](assets\images\ReadMEScreenshot.JPG)
+![Generated ReadMe](https://github.com/Jsumme1/ReadMe-generator/blob/main/assets/images/ReadMEScreenshot.JPG)
 
 ## Contributions
 Made by Julie
